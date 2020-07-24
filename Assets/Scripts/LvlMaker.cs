@@ -54,7 +54,7 @@ public class LvlMaker : MonoBehaviour
 		if(lvlClose < 3)
 		{
 			E[c].SetActive(true);
-			transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+			transform.position = new Vector3(transform.position.x, -1141, transform.position.z);
 		}
 		else if(lvlClose < 6)
 		{

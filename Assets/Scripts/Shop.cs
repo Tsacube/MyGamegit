@@ -40,10 +40,23 @@ public class Shop : MonoBehaviour
 	public int cost13 = 250;
 	public int cost14 = 250;
 	public int cost15 = 500;
-	public int cost16;
 	
 	void Start()
 	{	
+		cost2 = 10;
+		cost3 = 15;
+		cost4 = 20;
+		cost5 = 25;
+		cost6 = 30;
+		cost7 = 35;
+		cost8 = 40;
+		cost9 = 75;
+		cost10 = 75;
+		cost11 = 100;
+		cost12 = 100;
+		cost13 = 250;
+		cost14 = 250;
+		cost15 = 500;
 		buy1 = 1;
 		buy2 = PlayerPrefs.GetInt("buy2");
 		buy3 = PlayerPrefs.GetInt("buy3");
@@ -65,6 +78,62 @@ public class Shop : MonoBehaviour
 		if(ballSelect == 0)
 		{
 			ballSelect = 1;
+		}
+		if(buy2 == 1)
+		{
+			t[0].text = " + ";
+		}
+		if(buy3 == 1)
+		{
+			t[1].text = " + ";
+		}
+		if(buy4 == 1)
+		{
+			t[3].text = " + ";
+		}
+		if(buy5 == 1)
+		{
+			t[3].text = " + ";
+		}
+		if(buy6 == 1)
+		{
+			t[4].text = " + ";
+		}
+		if(buy7 == 1)
+		{
+			t[5].text = " + ";
+		}
+		if(buy8 == 1)
+		{
+			t[6].text = " + ";
+		}
+		if(buy9 == 1)
+		{
+			t[7].text = " + ";
+		}
+		if(buy10 == 1)
+		{
+			t[8].text = " + ";
+		}
+		if(buy11 == 1)
+		{
+			t[9].text = " + ";
+		}
+		if(buy12 == 1)
+		{
+			t[10].text = " + ";
+		}
+		if(buy13 == 1)
+		{
+			t[11].text = " + ";
+		}
+		if(buy14 == 1)
+		{
+			t[12].text = " + ";
+		}
+		if(buy15 == 1)
+		{
+			t[13].text = " + ";
 		}
 	}
 	
@@ -99,7 +168,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy2", buy2);
 						ballSelect = 2;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
-						t[0].text = " ";
+						t[0].text = " + ";
 					}
 				}
 				else
@@ -119,6 +188,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy3", buy3);
 						ballSelect = 3;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[1].text = " + ";
 					}
 				}
 				else
@@ -138,6 +208,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy4", buy4);
 						ballSelect = 4;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[2].text = " + ";
 					}
 				}
 				else
@@ -157,6 +228,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy5", buy5);
 						ballSelect = 5;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[3].text = " + ";
 					}
 				}
 				else
@@ -176,6 +248,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy6", buy6);
 						ballSelect = 6;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[4].text = " + ";
 					}
 				}
 				else
@@ -195,6 +268,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy7", buy7);
 						ballSelect = 7;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[5].text = " + ";
 					}
 				}
 				else
@@ -214,6 +288,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy8", buy8);
 						ballSelect = 8;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[6].text = " + ";
 					}
 				}
 				else
@@ -233,6 +308,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy9", buy9);
 						ballSelect = 2;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[7].text = " + ";
 					}
 				}
 				else
@@ -252,6 +328,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy10", buy10);
 						ballSelect = 10;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[8].text = " + ";
 					}
 				}
 				else
@@ -271,6 +348,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy11", buy11);
 						ballSelect = 11;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[9].text = " + ";
 					}
 				}
 				else
@@ -290,6 +368,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy12", buy12);
 						ballSelect = 12;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[10].text = " + ";
 					}
 				}
 				else
@@ -309,6 +388,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy13", buy13);
 						ballSelect = 13;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[11].text = " + ";
 					}
 				}
 				else
@@ -328,6 +408,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy14", buy14);
 						ballSelect = 14;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[12].text = " + ";
 					}
 				}
 				else
@@ -347,6 +428,7 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("buy15", buy15);
 						ballSelect = 15;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
+						t[13].text = " + ";
 					}
 				}
 				else
