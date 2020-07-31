@@ -40,7 +40,22 @@ public class Shop : MonoBehaviour
 	public int cost13 = 250;
 	public int cost14 = 250;
 	public int cost15 = 500;
-	
+	public AudioSource myFX;
+	public AudioClip YesFX;
+	public AudioClip NoFX;
+	public AudioClip ChangeFX;
+	public void YesSound()
+	{
+		myFX.PlayOneShot(YesFX);
+	}
+	public void NoSound()
+	{
+		myFX.PlayOneShot(NoFX);
+	}
+	public void ChangeSound()
+    {
+		myFX.PlayOneShot(ChangeFX);
+	}
 	void Start()
 	{	
 		cost2 = 10;
@@ -149,10 +164,11 @@ public class Shop : MonoBehaviour
 			case 1:
 				if(buy1 == 0)
 				{
-				
+				    
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 1;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -162,6 +178,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost2)
 					{
+						YesSound();
 						Gems = Gems - cost2;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy2 = 1;
@@ -170,9 +187,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[0].text = " + ";
 					}
+                    else
+                    {
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 2;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -182,6 +204,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost3)
 					{
+						YesSound();
 						Gems = Gems - cost3;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy3 = 1;
@@ -190,9 +213,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[1].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 3;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -202,6 +230,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost4)
 					{
+						YesSound();
 						Gems = Gems - cost4;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy4 = 1;
@@ -210,9 +239,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[2].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 4;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -222,6 +256,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost5)
 					{
+						YesSound();
 						Gems = Gems - cost5;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy5 = 1;
@@ -230,9 +265,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[3].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 5;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -242,6 +282,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost6)
 					{
+						YesSound();
 						Gems = Gems - cost6;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy6 = 1;
@@ -250,9 +291,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[4].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 6;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -262,6 +308,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost7)
 					{
+						YesSound();
 						Gems = Gems - cost7;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy7 = 1;
@@ -270,9 +317,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[5].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 7;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -282,6 +334,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost8)
 					{
+						YesSound();
 						Gems = Gems - cost8;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy8 = 1;
@@ -290,9 +343,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[6].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 8;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -302,6 +360,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost9)
 					{
+						YesSound();
 						Gems = Gems - cost9;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy9 = 1;
@@ -310,9 +369,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[7].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 9;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -322,6 +386,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost10)
 					{
+						YesSound();
 						Gems = Gems - cost10;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy10 = 1;
@@ -330,9 +395,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[8].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 10;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -342,6 +412,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost11)
 					{
+						YesSound();
 						Gems = Gems - cost11;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy11 = 1;
@@ -350,9 +421,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[9].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 11;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -362,6 +438,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost12)
 					{
+						YesSound();
 						Gems = Gems - cost12;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy12 = 1;
@@ -370,9 +447,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[10].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 12;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -382,6 +464,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost13)
 					{
+						YesSound();
 						Gems = Gems - cost13;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy13 = 1;
@@ -390,9 +473,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[11].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 13;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -402,6 +490,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost14)
 					{
+						YesSound();
 						Gems = Gems - cost14;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy14 = 1;
@@ -410,9 +499,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[12].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 14;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -422,6 +516,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost15)
 					{
+						YesSound();
 						Gems = Gems - cost15;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy15 = 1;
@@ -430,9 +525,14 @@ public class Shop : MonoBehaviour
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 						t[13].text = " + ";
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 15;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
@@ -442,6 +542,7 @@ public class Shop : MonoBehaviour
 				{
 					if(Gems >= cost2)
 					{
+						YesSound();
 						Gems = Gems - cost2;
 						PlayerPrefs.SetInt("Gems", Gems);
 						buy2 = 1;
@@ -449,9 +550,14 @@ public class Shop : MonoBehaviour
 						ballSelect = 2;
 						PlayerPrefs.SetInt("ballSelect", ballSelect);
 					}
+					else
+					{
+						NoSound();
+					}
 				}
 				else
 				{
+					ChangeSound();
 					ballSelect = 2;
 					PlayerPrefs.SetInt("ballSelect", ballSelect);
 				}
