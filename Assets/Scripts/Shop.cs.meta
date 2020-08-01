@@ -3,7 +3,12 @@ guid: ff6a8dca157c94447b6aa32c4c781aa4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - GemT: {instanceID: 0}
+  - myFX: {instanceID: 0}
+  - YesFX: {fileID: 8300000, guid: 94195180e7c40ff4bb35afd7d2416fd7, type: 3}
+  - NoFX: {fileID: 8300000, guid: 0b0547ee685edb845a0dcee299e81f23, type: 3}
+  - ChangeFX: {fileID: 8300000, guid: ad68d16e802379e408bdd5f09ec30c80, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
