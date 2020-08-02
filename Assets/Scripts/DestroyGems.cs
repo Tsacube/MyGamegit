@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DestroyGems : MonoBehaviour
 {
+	public AudioSource myFX;
+	public AudioClip GemFX;
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.tag == "Player")
