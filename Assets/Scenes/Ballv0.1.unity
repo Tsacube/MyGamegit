@@ -5007,7 +5007,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 499.9264
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -5432,7 +5432,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 354.19403
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -9020,6 +9020,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bdf5e22cea4eae7468b46681e2d6216b, type: 3}
   - {fileID: 21300000, guid: e1af7a6100b60df4dae69396a8926832, type: 3}
   - {fileID: 21300000, guid: 3bf16b602edbddc49bee41354465b45b, type: 3}
+  myFX: {fileID: 2146861419}
 --- !u!114 &2146861417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9073,9 +9074,10 @@ AudioSource:
   m_GameObject: {fileID: 2146861411}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 4230954350097580982, guid: da3c85a4234619243b4cfd2d5a4bf77b,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 62024c420854b8b4bb709c146d163d79, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

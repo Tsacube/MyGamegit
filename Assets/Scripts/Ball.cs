@@ -19,6 +19,7 @@ public class Ball : MonoBehaviour
 	public int ballSelect;
 	private SpriteRenderer spriteR;
     public Sprite[] sprites;
+	public AudioSource myFX;
 
 	void Start()
 	{
@@ -138,12 +139,10 @@ public class Ball : MonoBehaviour
             }
         }
     }
-	
-	    void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.tag == "Enemy")
 		{
-			
 			tp = false;
 			objLose.SetActive(true);
 			Time.timeScale = 0;
@@ -153,9 +152,9 @@ public class Ball : MonoBehaviour
 			GemsNow++;
 			PlayerPrefs.SetInt("GemsNow", GemsNow);
 			GemT.text = GemsNow.ToString();
+			myFX.Play();
 		}
 	}
-	
 	public void Reset()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);

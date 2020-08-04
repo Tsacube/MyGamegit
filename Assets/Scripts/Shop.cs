@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
-	public int ballSelect;
-	public int Gems;
+	public int ballSelect, Gems;
 	public Text GemT;
 	public Text[] t;
 	public int buy1;
@@ -57,7 +57,7 @@ public class Shop : MonoBehaviour
 		myFX.PlayOneShot(ChangeFX);
 	}
 	void Start()
-	{	
+	{
 		cost2 = 10;
 		cost3 = 15;
 		cost4 = 20;
