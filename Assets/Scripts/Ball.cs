@@ -20,6 +20,7 @@ public class Ball : MonoBehaviour
 	private SpriteRenderer spriteR;
     public Sprite[] sprites;
 	public AudioSource myFX;
+	public GameObject PauseButton, PauseMenu;
 
 	void Start()
 	{
@@ -166,5 +167,17 @@ public class Ball : MonoBehaviour
 	{
 		yield return new WaitForSeconds(5f);
 		tp = true;
+	}
+	public void Continue()
+    {
+		PauseButton.SetActive(true);
+		PauseMenu.SetActive(false);
+		Time.timeScale = 1;
+	}
+	public void Pause()
+    {
+		PauseMenu.SetActive(true);
+		PauseButton.SetActive(false);
+		Time.timeScale = 0;
 	}
 }
