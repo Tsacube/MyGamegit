@@ -21,7 +21,7 @@ public class Ball : MonoBehaviour
     public Sprite[] sprites;
 	public AudioSource myFX;
 	public GameObject PauseButton, PauseMenu;
-
+	public float Speedeer, SpeedeerT;
 	void Start()
 	{
 		spriteR = gameObject.GetComponent<SpriteRenderer>();
@@ -112,7 +112,8 @@ public class Ball : MonoBehaviour
 	
 	private void Update()
     {
-        if (Input.touchCount > 0)
+		Speedeer = Time.timeScale;
+		if (Input.touchCount > 0)
         {
             var touch = Input.GetTouch(0);
 
@@ -172,10 +173,12 @@ public class Ball : MonoBehaviour
     {
 		PauseButton.SetActive(true);
 		PauseMenu.SetActive(false);
-		Time.timeScale = 1;
+		Speedeer = PlayerPrefs.GetFloat("Speedeer", Speedeer);
+		Time.timeScale = Speedeer;
 	}
 	public void Pause()
     {
+		PlayerPrefs.SetFloat("Speedeer", Speedeer);
 		PauseMenu.SetActive(true);
 		PauseButton.SetActive(false);
 		Time.timeScale = 0;
