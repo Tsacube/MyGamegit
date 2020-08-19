@@ -601,6 +601,7 @@ GameObject:
   - component: {fileID: 136563673}
   - component: {fileID: 136563672}
   - component: {fileID: 136563671}
+  - component: {fileID: 136563674}
   m_Layer: 5
   m_Name: Language
   m_TagString: Untagged
@@ -670,7 +671,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 136563672}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 136563674}
+        m_MethodName: LanguageChanger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &136563672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +720,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136563669}
   m_CullTransparentMesh: 0
+--- !u!114 &136563674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136563669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3341050bb77a574eb942db0b62d56e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slider: {fileID: 0}
+  FX: {fileID: 0}
+  Value: 0
+  language: 1
+  languagebttner: 
+  languagebttn: {fileID: 373598114}
 --- !u!1 &213749581
 GameObject:
   m_ObjectHideFlags: 0
@@ -4524,7 +4554,8 @@ AudioSource:
   m_GameObject: {fileID: 2143951858}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2248753978806564521, guid: da3c85a4234619243b4cfd2d5a4bf77b,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
